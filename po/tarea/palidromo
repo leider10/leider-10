@@ -1,0 +1,23 @@
+import re
+
+def main():
+    texto = input("ingrese un texto: ")
+    palabras = re.split(r'\s+', texto)
+    numPalindromos = 0
+    for palabra in palabras:
+        if siPalindromo(palabra):
+            numPalindromos += 1
+            print(palabra + " es un palindromo")
+    print("hay " + str(numPalindromos) + " palindromos en el texto.")
+
+def siPalindromo(palabra):
+    n = len(palabra)
+    for i in range(n // 2):
+        if palabra[i] != palabra[n - i - 1]:
+            return False
+    return True
+
+if __name__ == "__main__":
+    main()
+
+    #leider manuel blanco palomino
