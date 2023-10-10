@@ -27,7 +27,7 @@ categorias = [
 ]
 
 # Crear un diccionario resultante
-diccionario_resultante = {
+diccionario_resultante = [
  {
 'id' : 123,
 'Nombre' : 'libreta' ,
@@ -39,7 +39,7 @@ diccionario_resultante = {
     'categoria' : 'Aseo' 
     }
 
-}    
+]    
 
 
 for producto in productos:
